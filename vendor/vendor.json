@@ -5,6 +5,5 @@
     "react-dom.js": "/js/vendor/react-dom-16.3.2.min.js",
     "socket-io.js": "/js/vendor/socket.io-1.4.5.min.js",
     "moment.js": "/js/vendor/moment-with-locales-2.10.6.min.js",
-    "loglevel.js": "/js/vendor/loglevel-1.4.0.min.js",
-    "tinymce.js": "/js/vendor/tinymce/tinymce.min.js"
+    "loglevel.js": "/js/vendor/loglevel-1.4.0.min.js"
 }
