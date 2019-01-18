@@ -11,7 +11,7 @@ gulp.task('compress and copy vendor files', () => {
     return gulp
         .src('./vendor/**/*.*')
         .pipe(gzip({ append: false }))
-        .pipe(gulp.dest('./dist/vendor'));
+        .pipe(gulp.dest('./dist/js/vendor'));
 });
  
 gulp.task('compress and copy css assets', () => {
