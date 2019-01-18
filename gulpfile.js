@@ -7,34 +7,22 @@ gulp.task('clean', () => {
         .pipe(clean({force: true}));
 });
  
-gulp.task('compress and copy JS', () => {
-    return gulp.src('./vendor/*.js')
-        // only top level js files in vendor directory will be compressed
+gulp.task('compress and copy vendor files', () => {
+    return gulp
+        .src('./vendor/**/*.*')
         .pipe(gzip({ append: false }))
         .pipe(gulp.dest('./dist/vendor'));
 });
  
-gulp.task('copy CSS assets', () => {
-    return gulp.src('./css/**/*.*')
+gulp.task('compress and copy css assets', () => {
+    return gulp
+        .src('./css/**/*.*')
+        .pipe(gzip({ append: false }))
         .pipe(gulp.dest('./dist/css'));
-});
-
-gulp.task('copy tinyMCE assets', () => {
-    return gulp.src('./vendor/tinymce/**/*.*')
-        .pipe(gulp.dest('./dist/vendor/tinymce'));
-});
-
-gulp.task('copy vendor.json', () => {
-    return gulp.src('./vendor/vendor.json')
-        .pipe(gulp.dest('./dist/vendor'));
 });
 
 gulp.task('build', gulp.series(
     'clean', 
-    [
-        'compress and copy JS', 
-        'copy CSS assets', 
-        'copy tinyMCE assets',
-        'copy vendor.json'
-    ]
+    'compress and copy vendor files', 
+    'compress and copy css assets'
 ));
