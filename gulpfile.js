@@ -13,16 +13,8 @@ gulp.task('compress and copy vendor files', () => {
         .pipe(gzip({ append: false }))
         .pipe(gulp.dest('./dist/js/vendor'));
 });
- 
-gulp.task('compress and copy css assets', () => {
-    return gulp
-        .src('./css/**/*.*')
-        .pipe(gzip({ append: false }))
-        .pipe(gulp.dest('./dist/css'));
-});
 
 gulp.task('build', gulp.series(
     'clean', 
-    'compress and copy vendor files', 
-    'compress and copy css assets'
+    'compress and copy vendor files',
 ));
