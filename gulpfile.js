@@ -6,7 +6,7 @@ gulp.task('clean', () => {
         .pipe(clean({force: true}));
 });
 
-gulp.task('compress and copy vendor files', () => {
+gulp.task('copy vendor files', () => {
     return gulp
         .src('./vendor/**/*.*')
         .pipe(gulp.dest('./dist/js/vendor'));
