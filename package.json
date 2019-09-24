@@ -18,7 +18,6 @@
   "homepage": "https://github.com/manywho/ui-vendor#readme",
   "dependencies": {
     "gulp": "^4.0.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-gzip": "^1.4.2"
+    "gulp-clean": "^0.4.0"
   }
 }
