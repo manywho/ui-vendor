@@ -1,5 +1,5 @@
 {
-    "jquery.js": "/js/vendor/jquery-2.1.4.min.js",
+    "jquery.js": "/js/vendor/jquery-3.4.1.min.js",
     "boostrap.js": "/js/vendor/bootstrap-3.3.6.min.js",
     "react.js": "/js/vendor/react-16.8.6.min.js",
     "react-dom.js": "/js/vendor/react-dom-16.8.6.min.js",
