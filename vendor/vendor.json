@@ -1,6 +1,7 @@
 {
-    "jquery.js": "/js/vendor/jquery-2.1.4.min.js",
-    "boostrap.js": "/js/vendor/bootstrap-3.3.6.min.js",
+    "jquery.js": "/js/vendor/jquery-3.4.1.min.js",
+    "jquery-migrate.js": "/js/vendor/jquery-migrate-3.1.0.min.js",
+    "boostrap.js": "/js/vendor/bootstrap-3.3.7.min.js",
     "react.js": "/js/vendor/react-16.8.6.min.js",
     "react-dom.js": "/js/vendor/react-dom-16.8.6.min.js",
     "socket-io.js": "/js/vendor/socket.io-1.4.5.min.js",
